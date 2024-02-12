@@ -1,5 +1,9 @@
 package model;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.util.Random;
 
 public class Tabla {
@@ -54,5 +58,37 @@ public class Tabla {
             i++;
         }
         return i == 8;
+    }
+    
+    public int uresSorokSzama() {
+        int db = 0;
+        
+        for (int i = 0; i < this.T.length; i++) {
+            if(uresSor(i)){
+                db++;
+            }
+        }
+        
+        return db;
+    }
+    
+    public int uresOszlopokSzama() {
+        int db = 0;
+        
+        for (int i = 0; i < this.T[0].length; i++) {
+            if(uresOszlop(i)){
+                db++;
+            }
+        }
+        return db;
+    }
+    
+    public void fajlbaIr() throws IOException{
+        String txt = this.megjelenit() + "\n";
+        
+        Path path = Path.of("tablak64.txt");
+        byte[] bytes = txt.getBytes();
+        
+        Files.write(path, bytes, StandardOpenOption.APPEND);
     }
 }
