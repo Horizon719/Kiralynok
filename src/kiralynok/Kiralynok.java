@@ -1,5 +1,7 @@
 package kiralynok;
 
+import model.Tabla;
+
 public class Kiralynok {
 
     public static void main(String[] args) {
@@ -7,7 +9,7 @@ public class Kiralynok {
     }
 
     private void program() {
-        Tabla t = new Tabla('*');
+        
     }
     
 }

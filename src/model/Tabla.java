@@ -1,4 +1,4 @@
-package kiralynok;
+package model;
 
 public class Tabla {
     private char[][] T;
@@ -12,5 +12,16 @@ public class Tabla {
                 T[i][j] = uresCella;
             }
         }
+    }
+    
+    public String megjelenit(){
+        String s = "";
+        for (int i = 0; i < T.length; i++) {
+            for (int j = 0; j < T[i].length; j++) {
+                s += T[i][j];
+            }
+            s += "\n";
+        }
+        return s;
     }
 }
