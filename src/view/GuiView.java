@@ -54,6 +54,7 @@ public class GuiView extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Királynők");
 
         jLabel1.setText("Tábla állása:");
 
