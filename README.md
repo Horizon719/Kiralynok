@@ -1,1 +1,1 @@
-# Kiralynok
+# Milichovszky Sándor
